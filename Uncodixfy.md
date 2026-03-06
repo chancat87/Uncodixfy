@@ -69,22 +69,39 @@ Think Linear. Think Raycast. Think Stripe. Think GitHub. They don't try to grab 
 - No ornamental labels like "live pulse", "night shift", "operator checklist" unless they come from the product voice.
 - No generic startup copy.
 - No style decisions made because they are easy to generate.
-- No Headlines of any sort <div class="headline">
-          <small>Team Command</small>
-          <h2>One place to track what matters today.</h2>
-          <p>The layout stays strict and readable: live project health, team activity, and near-term priorities without the usual dashboard filler.</p>
-        </div>
-    This is not allowed.
-- <small> headers are NOT allowed
-- big no to rounded SPANs
-- colors going towards blue. NOP, bad. when dark muted colors are best.
-- Anything in the structure of this card, is a BIG no.
-<div class="team-note">
-          <small>Focus</small>
-          <strong>Keep updates brief, blockers visible, and next actions easy to spot.</strong>
-        </div>
-        -This one is THE BIGGEST NO.
 
+- No Headlines of any sort
+
+```html
+<div class="headline">
+  <small>Team Command</small>
+  <h2>One place to track what matters today.</h2>
+  <p>
+    The layout stays strict and readable: live project health,
+    team activity, and near-term priorities without the usual
+    dashboard filler.
+  </p>
+</div>
+```
+
+This is not allowed.
+
+- `<small>` headers are NOT allowed
+- Big no to rounded `span`s
+- Colors going towards blue — **NOPE, bad.** Dark muted colors are best.
+
+- Anything in the structure of this card is a **BIG no**.
+
+```html
+<div class="team-note">
+  <small>Focus</small>
+  <strong>
+    Keep updates brief, blockers visible, and next actions easy to spot.
+  </strong>
+</div>
+```
+
+This one is **THE BIGGEST NO**.
 
 
 ## Specifically Banned (Based on  Mistakes)
