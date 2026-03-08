@@ -57,21 +57,53 @@ Before (Typical GPT UI) | After (Uncodixified)
 ---
 ## Agent Skill
 
-Uncodixfy is also available as an agent skill via SKILL.md. This works with any AI coding agent that supports the skill format (Claude Code, etc.).
+Uncodixfy is also available as an agent skill via `SKILL.md`. This works with AI coding agents that support the skill format, including Codex and Claude Code.
 
-### Windows (PowerShell)
+### 1. Codex
+
+Codex reads user-level skills from `$HOME/.agents/skills` on Windows (PowerShell) and `~/.agents/skills` on macOS/Linux.
+
+#### Windows (PowerShell)
+
+```powershell
+git clone https://github.com/cyxzdev/Uncodixfy.git "$HOME\.agents\skills\uncodixfy"
+```
+
+#### macOS
+
+```bash
+git clone https://github.com/cyxzdev/Uncodixfy.git ~/.agents/skills/uncodixfy
+```
+
+#### Linux
+
+```bash
+git clone https://github.com/cyxzdev/Uncodixfy.git ~/.agents/skills/uncodixfy
+```
+
+Once installed, invoke it with:
+
+```text
+$uncodixfy
+```
+
+### 2. Claude Code 
+
+Claude Code reads personal skills from `~/.claude/skills/<skill-name>/SKILL.md`.
+
+#### Windows (PowerShell)
 
 ```powershell
 git clone https://github.com/cyxzdev/Uncodixfy.git "$HOME\.claude\skills\uncodixfy"
 ```
 
-### macOS
+#### macOS
 
 ```bash
 git clone https://github.com/cyxzdev/Uncodixfy.git ~/.claude/skills/uncodixfy
 ```
 
-### Linux
+#### Linux
 
 ```bash
 git clone https://github.com/cyxzdev/Uncodixfy.git ~/.claude/skills/uncodixfy
@@ -82,3 +114,4 @@ Once installed, invoke it with:
 ```text
 /uncodixfy
 ```
+
